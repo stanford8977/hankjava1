@@ -31,22 +31,39 @@ public class PokerGame {
 	 {
 		 System.out.println( a + "C" );
 	 }*/
-		String a="\u2660";
+		
+		int n = 4;
+		int[] nn = new int[52];
+		
+		Card c = new Card(5);
+		Card[] cards = new Card[52];
+		
+		Poker poker = new Poker();
+		poker.print();
+		
+		/*String a="\u2660";
 		String b="\u2663";
 		String c="\u2665";
 		String d="\u2666";
-		int[] x = new int[13];
+		int[] x = new int[14];
 		x[1] = 1;
 		x[2] = 2;
 		x[3] = 3;
 		x[4] = 4;
 		x[5] = 5;
+		x[6] = 6;
+		x[7] = 7;
+		x[8] = 8;
+		x[9] = 9;
+		x[10] = 10;
+		x[11] = 11;
+		x[12] = 12;
+		x[13] = 13;
+		
+		
 	    for(int i = 0 ; i < x.length ; i++)
 	    {
-	        System.out.println(x[i] + a);
-	        System.out.println(x[i] + b);
-	        System.out.println(x[i] + c);
-	        System.out.println(x[i] + d);
+	        System.out.println(x[i] + a + x[i] + b + x[i] + c + x[i] + d);
 	        
 	    }
 	 
@@ -61,7 +78,7 @@ public class PokerGame {
     	 System.out.println(nums[i]);
      }
 		
-	 /*Random random = new Random();
+	 Random random = new Random();
 	 for(int i = 0 ; i < 52 ; i++)
 	 {
 		 int a = random.nextInt(13)+1;
